@@ -102,6 +102,10 @@ class PipelineFixer():
         self.base_url = "http://data.fixer.io/api/"
         self.token = os.getenv("FIXER_API_TOKEN")
 
+        if self.token is None:
+            print("Missing FIXER_API_TOKEN environment variable")
+            sys.exit()
+
     def load_hist_rate(self, date_ref: date, base_currency: str) -> object:
 
         rates_url = "{base_url}/{date}?access_key={token}&base={base}".format(
