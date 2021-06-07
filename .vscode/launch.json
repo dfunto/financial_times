@@ -1,0 +1,32 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Load Exchange",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "args": ["load_exchange", "2021-01-01", "2021-01-31"],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Hist Exchange",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "args": ["hist_exchange", "2021-01-01", "2021-01-31"],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Average Exchange",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "args": ["avg_exchange", "2021-01-01", "2021-01-31"],
+            "console": "integratedTerminal"
+        }
+    ]
+}
