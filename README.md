@@ -25,7 +25,13 @@ To set up the pipeline, follow these steps:
 
 # Usage
 
-Use main.py script as an example, importing one of the following functions from the pipeline_fixer module.
+Use main.py script as an example, run:
+
+```bash
+python main.py
+```
+
+Import one of the following functions from the pipeline_fixer module and change parameters to your needs. 
 
 ## Function load_hist_rates: 
 
