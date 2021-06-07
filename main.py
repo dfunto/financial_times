@@ -16,10 +16,12 @@ def main():
     print()
 
     # Display loaded historical rates
+    print("Historical Rates")
     disp_hist_rates(begin_date, end_date, base_currency)
     print()
     
     # Display average for selected currency
+    print("Average Rates")
     disp_avg_rates(begin_date, end_date, currency="USD", base_currency=base_currency)
 
 if __name__ == "__main__":
