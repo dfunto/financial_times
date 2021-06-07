@@ -1,7 +1,5 @@
 from datetime import date
 
-from pandas.core import base
-
 from pipeline_fixer import load_hist_rates, disp_hist_rates, disp_avg_rates
 
 def main():
